@@ -1,0 +1,140 @@
+@import '../../index';
+
+.navigation {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 70px;
+
+    @media (max-width: 767px) {
+        box-shadow: none !important;
+    }
+
+    &__logo {
+        display: flex!important;
+        padding-left: 30px;
+        align-items: center;
+    }
+
+    &__header {
+        font-size: 22px;
+        cursor: pointer;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.15);
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__btn {
+        background: none;
+        border: 1px solid @accent-one;
+        color: #10de93;
+        padding: 5px 15px;
+        transition: .6s;
+        min-width: 150px;
+        display: inline-block;
+        font-family: @primary-font;
+        font-weight: 300;
+        font-size: .88rem;
+        letter-spacing: .5px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(94,195,235,.2);
+            outline: none;
+        }
+
+        a {
+            color: @accent-three;
+            font-size: 12px;
+
+            &:hover {
+                color: @accent-three;
+            }
+        }
+    }
+
+    button {
+        min-width: 50px !important;
+        background: transparent;
+        font-weight: 500;
+    }
+
+    &__mobile {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 20px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        .fixed {
+            position: fixed;
+            z-index: 20;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 30px;
+        align-items: center;
+        margin: 0;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 12px 4px 10px 8px;
+        margin-right: 15px;
+        color: @accent-one;
+    }
+        
+    &__item-btn {
+        color: @accent-three;
+        display: flex;
+        font-family: @primary-font;
+        font-size: 0.85rem;
+        padding: 0 !important;
+        font-weight: 400;
+        position: relative;
+        cursor: pointer;
+        border: none;
+        transition: .7s;
+
+        span {
+            margin-right: 8px;
+            letter-spacing: -1px;
+            font-weight: 500;
+            color: @accent-one;
+            font-family: @primary-font;
+            font-size: 0.85rem;
+
+            &:hover {
+                color: @accent-one !important; 
+            }
+        }
+
+        &:hover {
+            background: none;
+            color: @accent-one !important; 
+        }
+
+        &:focus {
+            border: none;
+        }
+    }
+}

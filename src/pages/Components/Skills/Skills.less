@@ -1,0 +1,75 @@
+@import '../../index';
+
+.skills {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    padding: 100px 50px 0 50px;
+    max-width: 850px;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        padding: 100px 25px 0 25px;
+    }
+
+    &__row {
+        width: 100%;
+    }
+
+    &__col {
+        @media (max-width: 991px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    .skills &__tag {
+        display: flex;
+    }
+
+    .ant-tag {
+        padding: 4px 8px;
+        margin-bottom: 8px;
+
+        svg {
+            color: @primary-color;
+            margin-right: 5px;
+            vertical-align: middle;
+            font-size: 18px;
+            text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 16px rgba(21, 21, 21, 0.3);
+        }
+
+        span {
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }          
+
+
+    &__front {
+        .ant-tag { 
+            color: @primary-color;
+            background-color: lighten(@secondary-color, 30%);
+            border: 1px solid @secondary-color;
+        }
+    }
+
+    &__back {
+        margin-bottom: 25px;
+
+        .ant-tag {
+            color: @primary-color;
+            background-color: lighten(@accent-one, 30%);
+            border: 1px solid @accent-one;
+        }
+    }
+
+    &__work {
+        .ant-tag {
+            color: @primary-color;
+            background-color: lighten(@accent-two, 20%);
+            border: 1px solid @accent-two;
+        }
+    }
+}

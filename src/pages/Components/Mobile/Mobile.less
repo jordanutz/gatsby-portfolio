@@ -1,0 +1,110 @@
+@import '../../index';
+
+.mobile {
+    &__container {
+        height: 100%;
+    }
+
+    &__logo {
+        display: flex !important;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    &__header {
+        font-size: 48px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu {
+        cursor: pointer;
+        min-width: 30px;
+        min-height: 30px;
+        max-height: 30px;
+        max-width: 30px;
+        color: @accent-two;
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 20px 25px;
+        border-top: 1px solid rgba(@accent-three, .2);
+
+        &:last-of-type {
+            border-bottom: 1px solid rgba(@accent-three, .2); 
+        }
+    }
+
+    &__icon-item {
+        display: flex !important;
+        justify-content: flex-end;
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__sub {
+        display: flex;
+        color: #5ec3eb;
+        font-weight: 500;
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        cursor: pointer;
+        color: #ccd6f6;
+        border: none;
+        text-align: center;
+        padding: 0;
+        font-size: 1.15rem;
+        
+        &:hover {
+            background: none;
+            color: @secondary-color !important;
+        }
+    }
+
+    &__resume {
+        padding-top: 25px;
+    }
+
+    &__resume-btn {
+        display: block;
+        font-size: 1.25rem;
+        margin: auto;
+        font-weight: 500;
+    }          
+}
+
+@media screen and (max-width: 767px) {
+    #mobile .mobile__sub {
+        font-size: 1.15rem;
+    }
+
+    #mobile a {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #mobile {
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    #mobile {
+        display: none;
+    }
+}

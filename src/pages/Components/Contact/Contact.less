@@ -1,0 +1,57 @@
+@import '../../index';
+
+.contact {
+    height: 85vh;
+    text-align: center;
+    background-image: url('https://i.ibb.co/1zPLVDs/city-beach-4.jpg') !important;
+    background-size: cover !important;
+    display: flex !important;
+    justify-content: center;;
+    align-items: center;
+    position: relative;
+    border-top: 4px solid @accent-one;
+
+    &::before {
+        background: linear-gradient(170deg, rgba(70, 40, 147, .8) 29%,rgba(106, 245, 251, .9) 100%);
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__overview {
+        p {
+            max-width: 500px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+
+            @media (max-width: 767px) {
+                max-width: 350px;
+            }
+        }
+
+        button {
+            font-weight: 500;
+            background: none;
+            border: 1px solid @accent-one;
+            color: @accent-one;
+            padding: 10px 30px;
+            transition: .6s;
+            min-width: 150px;
+            display: inline-block;
+            font-family: @primary-font;
+            font-size: .88rem;
+            letter-spacing: .5px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+               background-color: rgba(94,195,235,.2);
+               outline: none;
+            }
+        }
+    }
+}
