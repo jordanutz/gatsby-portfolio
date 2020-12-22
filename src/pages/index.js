@@ -1,15 +1,15 @@
 import React, {useEffect, useState, useRef} from 'react';
 
-import Navigation from './Components/Navigation/Navigation';
-import Slider from './Components/Slider/Slider';
-import About from './Components/About/About';
-import Skills from './Components/Skills/Skills';
-import Experience from './Components/Experience/Experience';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Contact from './Components/Contact/Contact';
-import Social from './Components/Social/Social';
+import Navigation from '../components/Navigation/Navigation';
+import Slider from '../components/Slider/Slider';
+import About from '../components/About/About';
+import Skills from '../components/Skills/Skills';
+import Experience from '../components/Experience/Experience';
+import Portfolio from '../components/Portfolio/Portfolio';
+import Contact from '../components/Contact/Contact';
+import Social from '../components/Social/Social';
+import Wrapper from '../components/Wrapper/Wrapper';
 
-import ScrollAnimation from 'react-animate-on-scroll';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 
 import { Layout } from 'antd';
@@ -22,6 +22,7 @@ export default function Home({data}) {
   const [headerStyle, setHeaderStyle] = useState({
     transition: 'all 200ms ease-in'
   });
+
   const slider = useRef();
   const about = useRef();
   const skills = useRef();
@@ -90,13 +91,14 @@ export default function Home({data}) {
   };
 
   const scrollView = (id) => { 
+    console.log(id)
     id.current.scrollIntoView({ block: 'start',  behavior: 'smooth' });
     mobileMenu.current.className = "hide";
     setToggleMenu(false);
   };
 
   return (
-    <Layout>
+    <Wrapper>
       <Navigation 
         slider={slider}
         about={about}
@@ -122,13 +124,13 @@ export default function Home({data}) {
         isLoading={isLoading} 
       />
       <Content>
-        <About />
-        <Skills />
-        <Experience />
-        <Portfolio />
-        <Contact />
+        <About about={about} />
+        <Skills skills={skills} />
+        <Experience experience={experience} />
+        <Portfolio portfolio={portfolio} />
+        <Contact contact={contact} />
         <Social isLoading={isLoading} />
       </Content>
-    </Layout>
+    </Wrapper>
   ) 
 };

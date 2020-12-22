@@ -1,14 +1,24 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
     title: 'Jordan Utz | Front End Software Engineer'
   },
   plugins: [
+    'gatsby-plugin-react-helmet', 
+    {
+      resolve: 'gatsby-plugin-mdx', 
+      options: {
+        defaultLayouts: {
+          default: `${__dirname}/src/components/Wrapper/Wrapper.jsx`
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem', 
+      options: {
+        name: 'entries', 
+        path: `${__dirname}/src/entries/`
+      }
+    },
     {
       resolve: 'gatsby-plugin-antd', 
       options: {
