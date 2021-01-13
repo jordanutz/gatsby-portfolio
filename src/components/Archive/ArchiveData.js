@@ -5,12 +5,9 @@ export const archiveData = [
       project: 'Portfolio',
       goal: 'Curate a collection of the projects I\'ve completed as a developer, both personal and professional',
       technologies: [
-         {tag: 'React', type: 'front'}, 
-         {tag: 'Hooks', type: 'front'}, 
+         {tag: 'Gatsby', type: 'front'}, 
          {tag: 'Ant Design', type: 'front'}, 
-         {tag: 'Sass', type: 'front'}, 
-         {tag: 'Node.js', type: 'back'}, 
-         {tag: 'Express', type: 'back'}, 
+         {tag: 'Less', type: 'front'}, 
       ], 
       github: 'https://github.com/jordanutz/Portfolio',
       codepen: null

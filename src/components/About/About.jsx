@@ -10,7 +10,7 @@ const About = ({about}) => {
             <Row>
                <Col md={12} className="about__bio">
                   <h2>About</h2>
-                  <p>Welcome to the corner of the Internet where a repository of my imagination is transpiled into code. I embarked on a journey toward becoming a Front End Software Engineer by attending <a target="_blank" rel="noopener noreferrer" href="https://www.devmountain.com">DevMountain</a>, a three month intensive bootcamp that offers a full stack curriculum. This has ultimately led me to join the team at <a target="_blank" rel="noopener noreferrer" href="https://www.webstaurantstore.com/">WebstaurantStore</a>, where I spend my day writing performant code in React while soaking up the rays Tampa has to offer. </p> 
+                  <p>Welcome to the corner of the Internet where a repository of my imagination is transpiled into code. I embarked on a journey toward becoming a Front End Software Engineer by attending <a target="_blank" rel="noopener noreferrer" href="https://www.devmountain.com">DevMountain</a>, a three month intensive bootcamp that offers a full stack curriculum. This adventure has ultimately led me to join the team at <a target="_blank" rel="noopener noreferrer" href="https://www.webstaurantstore.com/">WebstaurantStore</a>, where I spend my day writing performant code in React while soaking up the rays Tampa has to offer. </p> 
                   <p>Here are just a few hobbies of mine outside of programming:</p>
                   <Row>
                      <Col xs={12}>

@@ -11,7 +11,7 @@ import { GiWindSlap, GiAtomicSlashes, GiSmartphone } from 'react-icons/gi';
 import { HiViewGrid } from 'react-icons/hi';
 import { RiReactjsFill } from 'react-icons/ri';
 import { ImAccessibility } from 'react-icons/im';
-import { SiAdobephotoshop, SiFigma } from 'react-icons/si';
+import { SiAdobephotoshop, SiFigma, SiTypescript, SiNextDotJs } from 'react-icons/si';
 
 export const frontEnd = {
       id: 1,
@@ -23,15 +23,16 @@ export const frontEnd = {
             {id: 6, value: 'JavaScript', icon: <DiJavascript />}, 
             {id: 7, value: 'React', icon: <RiReactjsFill />}, 
             {id: 8, value: 'Redux', icon: <GiAtomicSlashes />},
-            {id: 9, value: 'Webpack', icon: <IoIosCube />},
-            {id: 10, value: 'Sass', icon: <DiSass />}, 
-            {id: 11, value: 'Tailwind', icon: <GiWindSlap />},
-            {id: 12, value: 'Bootstrap 4', icon: <FaBootstrap />}, 
-            {id: 13, value: 'CSS Grid', icon: <HiViewGrid />},
-            {id: 14, value: 'Gatsby', icon: <GrGatsbyjs />},
-            {id: 15, value: 'Accessibility', icon: <ImAccessibility />}, 
+            {id: 9, value: 'Typescript', icon: <SiTypescript />},
+            {id: 10, value: 'Webpack', icon: <IoIosCube />},
+            {id: 11, value: 'Next.js', icon: <SiNextDotJs />},
+            {id: 12, value: 'Gatsby', icon: <GrGatsbyjs />},
+            {id: 13, value: 'Sass', icon: <DiSass />}, 
+            {id: 14, value: 'Tailwind', icon: <GiWindSlap />},
+            {id: 15, value: 'Bootstrap 4', icon: <FaBootstrap />},  
             {id: 16, value: 'Ant Design', icon: <AiOutlineAntDesign />},
-            {id: 16, value: 'Responsive Design', icon: <GiSmartphone />}
+            {id: 17, value: 'A11y', icon: <ImAccessibility />},
+            {id: 18, value: 'Resp. Design', icon: <GiSmartphone />}
       ]
 };
 

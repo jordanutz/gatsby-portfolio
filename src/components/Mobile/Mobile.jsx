@@ -2,7 +2,10 @@ import React from 'react';
 import './Mobile.less';
 
 // Components
-import { Layout, Row, Col } from 'antd';
+import { Layout, Row, Col, Button, Typography } from 'antd';
+import { AiOutlineClose } from 'react-icons/ai';
+
+const { Text } = Typography;
 
 const Mobile = ({ mobileMenu, 
                 activateMobile, 
@@ -19,6 +22,10 @@ const Mobile = ({ mobileMenu,
             <Layout className="mobile__container">
                 <Row>
                     <Col xs={24} className='mobile__icon-item'>
+                        <AiOutlineClose
+                            onClick={() => activateMobile(mobileMenu)} 
+                            className="mobile__menu" 
+                         />
                     </Col>
                 </Row>
                 <Row>
@@ -28,36 +35,38 @@ const Mobile = ({ mobileMenu,
                   <Col xs={24}>              
                         <ul className="mobile__list">
                             <li className="mobile__item">
-                                <button className="mobile__btn" onClick={() => scrollView(about, setToggleMenu)}>
-                                    <span className="mobile__sub">01.</span>About
-                                </button>
+                                <Button className="mobile__btn" onClick={() => scrollView(about, setToggleMenu)} type="link">
+                                    <Text className="mobile__sub">01.</Text>About
+                                </Button>
                             </li>
                             <li className="mobile__item">
-                                <button className="mobile__btn" onClick={() => scrollView(skills, setToggleMenu)}>
-                                    <span className="mobile__sub">02.</span>Skills
-                                </button>
+                                <Button className="mobile__btn" onClick={() => scrollView(skills, setToggleMenu)} type="link">
+                                    <Text className="mobile__sub">02.</Text>Skills
+                                </Button>
                             </li>
                             <li className="mobile__item">
-                                <button className="mobile__btn" onClick={() => scrollView(experience, setToggleMenu)}>
-                                    <span className="mobile__sub">03.</span>Experience
-                                </button>
+                                <Button className="mobile__btn" onClick={() => scrollView(experience, setToggleMenu)} type="link">
+                                    <Text className="mobile__sub">03.</Text>Experience
+                                </Button>
                             </li>
                             <li className="mobile__item">
-                                <button className="mobile__btn" onClick={() => scrollView(portfolio, setToggleMenu)}>
-                                    <span className="mobile__sub">04.</span>Portfolio
-                                </button>
+                                <Button className="mobile__btn" onClick={() => scrollView(portfolio, setToggleMenu)} type="link">
+                                    <Text className="mobile__sub">04.</Text>Portfolio
+                                </Button>
                             </li>
                             <li className="mobile__item" style={{marginBottom: '1.5rem'}}>
-                                <button className="mobile__btn" onClick={() => scrollView(contact, setToggleMenu)}>
-                                    <span className="mobile__sub">05.</span>Contact
-                                </button>
+                                <Button className="mobile__btn" onClick={() => scrollView(contact, setToggleMenu)} type="link">
+                                    <Text className="mobile__sub">05.</Text>Contact
+                                </Button>
                             </li>
                         </ul>
                     </Col>
                     <Col xs={24} className="mobile__resume">
-                        <a href="https://drive.google.com/file/d/1pSxbKb7ZTj7DvMCaFk0zTeeIQNkLgEkn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                            <button className="mobile__resume-btn">Resume</button>
-                        </a>
+                       
+                            <Button className="classic">
+                               Resume
+                            </Button>
+        
                     </Col>
                 </Row>
             </Layout> 

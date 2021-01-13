@@ -91,7 +91,6 @@ export default function Home({data}) {
   };
 
   const scrollView = (id) => { 
-    console.log(id)
     id.current.scrollIntoView({ block: 'start',  behavior: 'smooth' });
     mobileMenu.current.className = "hide";
     setToggleMenu(false);

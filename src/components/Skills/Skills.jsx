@@ -24,18 +24,18 @@ const Skills = ({skills}) => {
                </Col>
                <Col xs={24} sm={{span: 18, offset: 2}} lg={{span: 12, offset: 0}} className='skills__col'>
                   <Row>
-                        <Col xs={24} className='skills__back'>
-                           <h3>Back End Dev.</h3>
-                           <Row>
-                              <Skill technologies={backEnd.technologies} />
-                           </Row>
-                        </Col>
-                        <Col xs={24} className='skills__work'>
-                           <h3>Workflow</h3>
-                           <Row>
-                              <Skill technologies={workflow.technologies} />
-                           </Row>
-                        </Col>
+                     <Col xs={24} className='skills__back'>
+                        <h3>Back End Dev.</h3>
+                        <Row>
+                           <Skill technologies={backEnd.technologies} />
+                        </Row>
+                     </Col>
+                     <Col xs={24} className='skills__work'>
+                        <h3>Workflow</h3>
+                        <Row>
+                           <Skill technologies={workflow.technologies} />
+                        </Row>
+                     </Col>
                   </Row>
                </Col>
             </Row>
