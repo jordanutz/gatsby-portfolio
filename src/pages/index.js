@@ -111,6 +111,7 @@ export default function Home() {
         <Experience experience={experience} />
         <Portfolio portfolio={portfolio} />
         <Contact contact={contact} />
+        <Social />
       </Content>
     </Wrapper>
   )
