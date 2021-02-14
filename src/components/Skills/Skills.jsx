@@ -8,7 +8,7 @@ import Skill from './Skill';
 
 const Skills = ({skills}) => {
     return (
-       <div ref={skills}>
+       <div ref={skills} data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
           <Layout className="skills">
             <Row className='skills__row'>
                <Col xs={24} sm={{span: 20, offset: 1}} lg={{span: 24, offset: 0}}>

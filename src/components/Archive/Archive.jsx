@@ -10,8 +10,6 @@ const Archive = ({archive}) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // archive.current.scrollIntoView({ block: "end", behavior: 'smooth' });
-
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);

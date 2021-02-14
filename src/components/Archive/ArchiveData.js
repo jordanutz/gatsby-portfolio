@@ -1,6 +1,19 @@
 export const archiveData = [
    {
       key: '1',
+      year: '2021',
+      project: 'Quiz Time: Video Game Edition',
+      goal: 'Build a trivia game that tests user of their knowledge of video games using the Open Trivia API',
+      technologies: [
+         {tag: 'React', type: 'front'}, 
+         {tag: 'JavaScript', type: 'front'}, 
+         {tag: 'Sass', type: 'front'}, 
+      ], 
+      github: 'https://github.com/jordanutz/quiz-time',
+      codepen: 'https://codepen.io/jordanutz/pen/mdOPWpE'
+   },
+   {
+      key: '1',
       year: '2020',
       project: 'Portfolio',
       goal: 'Curate a collection of the projects I\'ve completed as a developer, both personal and professional',

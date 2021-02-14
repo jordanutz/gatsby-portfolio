@@ -2,18 +2,14 @@ import React from 'react';
 import { Layout } from 'antd';
 
 import Helmet from 'react-helmet'
-import useSiteMetadata from '../../hooks/use-sitemetadata'
 
 const Wrapper = ({children}) => {
-
-   const { title } = useSiteMetadata();
-
    return (
       <Layout>
          <Helmet>
             <html lang='en' />
-            <title>{title}</title>
-            <meta name='description' content='site description' />
+            <title>Jordan Utz | Front End Software Engineer</title>
+            <meta name='description' content='Portfolio site for Jordan Utz' />
          </Helmet>
          {children}
       </Layout>

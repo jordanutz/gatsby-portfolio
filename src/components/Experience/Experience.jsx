@@ -27,7 +27,7 @@ const Experience = ({experience}) => {
     };
 
     return (
-       <div ref={experience}>
+       <div ref={experience} data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
           <Layout className="experience">
             <Row>
                <Col xs={24} sm={{span: 20, offset: 1}} lg={{span: 24, offset: 0}} className="experience__alignment">

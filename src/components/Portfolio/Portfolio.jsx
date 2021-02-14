@@ -38,7 +38,7 @@ const Portfolio = ({portfolio}) => {
     return (
         <div ref={portfolio}>
             <Layout className="portfolio">
-                <Row>
+                <Row data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
                     <Col xs={24}>
                         <h2>Portfolio</h2>
                     </Col>
@@ -46,7 +46,7 @@ const Portfolio = ({portfolio}) => {
                 <Row>
                     {displayPersonal}
                 </Row>
-                <Row>
+                <Row data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
                     <Col xs={24} className="portfolio__archive">
                         <h4>Project Archive</h4>
                         <Row gutter={24} className='portfolio__archive-projects'>

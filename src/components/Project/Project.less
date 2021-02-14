@@ -1,87 +1,87 @@
-@import '../../pages/index';
+@import "../../pages/index";
 
 .project {
-   width: 100%;
-   color: #fff;
-   height: 300px;
-   max-height: 300px;
-   padding: 25px 20px;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   border: 1px solid @accent-two;
+  width: 100%;
+  color: #fff;
+  height: 300px;
+  max-height: 300px;
+  padding: 25px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid @accent-two;
 
-   &__header {
-      h3 {
-         margin-bottom: 5px;
-         padding: 0;
+  &__header {
+    h3 {
+      margin-bottom: 5px;
+      padding: 0;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+      line-height: 20px;
+    }
+  }
+
+  svg {
+    font-size: 48px;
+    color: @accent-two;
+    margin-bottom: 25px;
+  }
+
+  .project &__links {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1.25rem;
+    align-items: center;
+
+    svg {
+      font-size: 1.4rem;
+      color: @secondary-color;
+      margin-right: 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: @accent-two;
       }
-      
-      p {
-         font-size: .85rem;
-         margin-bottom: 15px;
-      }
-   }
+    }
+  }
 
-   svg {
-      font-size: 48px;
-      color: @accent-two;
-      margin-bottom: 25px;
-   }
-
-   .project &__links {
-      display: flex;
-      justify-content: flex-end;
-      padding-bottom: 1.25rem;
-      align-items: center;
-
-      svg {
-         font-size: 1.4rem; 
-         color: @secondary-color;
-         margin-right: 15px;
-         cursor: pointer;
-     
-         &:hover {
-           color: @accent-two;
-         }
-      }
-   }
-
-   &__tech {
-      p {
-         font-size: .7rem;
-         font-family: @primary-font;
-         font-weight: 300;
-      }
-   }
+  &__tech {
+    p {
+      font-size: 0.7rem;
+      font-family: @primary-font;
+      font-weight: 300;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .project {
+    min-height: 375px;
+  }
 
-   .project {
-      min-height: 375px;
-   }
-
-   .project .project__header p {
-      line-height: 24px;
-      font-size: 1.1rem;
+  .project .project__header p {
+    line-height: 24px;
+    font-size: 1.1rem;
   }
 
   .project .project__tech p {
-     font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .project svg {
-   font-size: 64px;
+    font-size: 64px;
   }
 
   .project__nav i {
-     font-size: 32px;
+    font-size: 32px;
   }
 }
 
 @media screen and (max-width: 991px) {
-   .project {
-      margin-bottom: 50px;
-   }
+  .project {
+    margin-bottom: 50px;
+  }
 }

@@ -5,19 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet', 
     {
-      resolve: 'gatsby-plugin-mdx', 
-      options: {
-        defaultLayouts: {
-          default: `${__dirname}/src/components/Wrapper/Wrapper.jsx`
-        }
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem', 
-      options: {
-        name: 'entries', 
-        path: `${__dirname}/src/entries/`
-      }
+      resolve: 'gatsby-plugin-scroll-reveal'
     },
     {
       resolve: 'gatsby-plugin-antd', 

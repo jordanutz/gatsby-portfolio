@@ -1,4 +1,4 @@
-@import '../../pages/index';
+@import "../../pages/index";
 
 .module {
   width: 100%;
@@ -12,10 +12,10 @@
   margin: 0 auto;
 
   @media (max-width: 767px) {
-    border: 1px solid @secondary-color; 
+    border: 1px solid @secondary-color;
     padding: 10px 0;
   }
-  
+
   .row {
     max-height: 350px;
   }
@@ -24,20 +24,20 @@
     box-shadow: @accent-two 0px 10px 30px -15px;
     position: relative;
     z-index: 10;
-    background-color: rgba(@primary-color, .9);
+    background-color: rgba(@primary-color, 0.9);
     font-size: 18px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     margin-bottom: 25px;
     transform: translateX(0px);
     min-width: 490px;
-    
+
     p {
-      font-size: .85rem;
+      font-size: 0.85rem;
       font-family: @secondary-font;
       font-weight: 500;
       margin-bottom: 0;
       padding: 30px;
-      letter-spacing: .1px;
+      letter-spacing: 0.1px;
     }
 
     &--right {
@@ -49,7 +49,7 @@
 
   &__technologies {
     p {
-      font-size: .7rem;
+      font-size: 0.7rem;
       font-family: @primary-font;
       font-weight: 300;
       margin-bottom: 15px;
@@ -57,18 +57,17 @@
   }
 
   &__nav {
-
     i {
-      font-size: 1.4rem; 
+      font-size: 1.4rem;
       color: @secondary-color;
       margin-right: 15px;
       cursor: pointer;
-      transition: .3s;
-	
-		  &:hover {
+      transition: 0.3s all;
+
+      &:hover {
         color: @accent-two;
-		  }
-	  }
+      }
+    }
   }
 
   .module__details {
@@ -97,7 +96,7 @@
       object-fit: cover;
       object-position: left;
       height: 100%;
-    
+
       &:hover {
         cursor: pointer;
       }
@@ -112,23 +111,23 @@
       right: 0;
       bottom: 0;
       z-index: 3;
-      opacity: .5;
+      opacity: 0.5;
     }
 
     a:hover::before {
       cursor: pointer;
-      animation: fadeout .3s forwards;
+      animation: fadeout 0.3s forwards;
     }
   }
 
   .project-links {
     display: flex;
   }
-}  
+}
 
 @media screen and (max-width: 767px) {
   .module__technologies p {
-    font-size: .9rem !important;
+    font-size: 0.9rem !important;
   }
 
   .module p {
@@ -182,14 +181,13 @@
 
 @media screen and (min-width: 768px) {
   .project-right {
-    justify-content: flex-end
+    justify-content: flex-end;
   }
 
   .module .module__img {
     max-height: 340px;
     border-radius: 3px;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
