@@ -26,7 +26,7 @@ const Navigation = props => {
   return (
     <>
       <nav style={{ ...props.headerStyle }} className="navigation">
-        <Row>
+        <Row data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000" data-sal-delay="3000">
           <Col xs={6} sm={3} className="navigation__logo">
             <h2
               className="navigation__header"

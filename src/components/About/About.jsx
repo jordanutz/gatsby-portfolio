@@ -36,8 +36,7 @@ const About = ({ about }) => {
               >
                 WebstaurantStore
               </a>
-              , where I spend my day writing performant code in React while
-              soaking up the rays Tampa has to offer.{" "}
+              , where I spend my day writing performant code in React and leveling up my JavaScript skills.
             </p>
             <p>Here are just a few hobbies of mine outside of programming:</p>
             <Row>
