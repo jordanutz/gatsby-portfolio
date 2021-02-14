@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 
 import Navigation from "../components/Navigation/Navigation"
 import Slider from "../components/Slider/Slider"
@@ -16,7 +16,6 @@ import { Layout } from "antd"
 const { Content } = Layout
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true)
   const [toggleMenu, setToggleMenu] = useState(false)
   const [headerStyle, setHeaderStyle] = useState({
     transition: "all 200ms ease-in",
@@ -33,21 +32,6 @@ export default function Home() {
 
   let visibility = "hide"
 
-  useEffect(() => {
-    if (isLoading && window.scrollY === 0) {
-      document.body.style.overflow = "hidden"
-      setTimeout(() => {
-        document.body.style.overflow = "visible"
-        setIsLoading(false)
-      }, 2500)
-    } else {
-      setIsLoading(false)
-    }
-
-    if (toggleMenu) {
-      mobileMenu.current.className = "show"
-    }
-  }, [toggleMenu, isLoading])
 
   useScrollPosition(
     ({ prevPos, currPos }) => {
@@ -127,7 +111,6 @@ export default function Home() {
         <Experience experience={experience} />
         <Portfolio portfolio={portfolio} />
         <Contact contact={contact} />
-        <Social isLoading={isLoading} />
       </Content>
     </Wrapper>
   )
