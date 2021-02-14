@@ -1,11 +1,16 @@
-import React from "React"
+import React from 'react'
 import "./About.less"
 
 import { Layout, Row, Col } from "antd"
 
 const About = ({ about }) => {
   return (
-    <div ref={about} data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
+    <div
+      ref={about}
+      data-sal="fade"
+      data-sal-easing="ease-in-out"
+      data-sal-duration="3000"
+    >
       <Layout className="about">
         <Row>
           <Col md={12} className="about__bio">
