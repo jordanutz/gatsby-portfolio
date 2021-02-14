@@ -11,9 +11,9 @@ const Slider = ({ scrollView, about, setToggleMenu, slider }) => {
       <Layout className="slider">
         <Row className="slider__carousel">
           <Col span={24}>
-            <section className="slider__header">
-              <h1 data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000">Jordan Utz</h1>
-              <h2 data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000" data-sal-delay="3000">Front End Software Engineer</h2>
+            <section className="slider__header" data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000">
+              <h1>Jordan Utz</h1>
+              <h2>Front End Software Engineer</h2>
             </section>
           </Col>
         </Row>
