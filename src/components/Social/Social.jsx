@@ -5,8 +5,8 @@ import { GiPhotoCamera } from "react-icons/gi"
 
 const Social = () => (
   <>
-    <section className="social">
-      <section className="social-nav" data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000" data-sal-delay="3000">
+    <section className="social" data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000" data-sal-delay="3000">
+      <section className="social-nav">
         <a
           href="https://www.github.com/jordanutz"
           target="_blank"
@@ -33,7 +33,7 @@ const Social = () => (
         </a>
       </section>
     </section>
-    <section className="email" data-sal="fade" data-sal-easing="ease-in" data-sal-duration="3000" data-sal-delay="3000">
+    <section className="email">
       <a href="mailto:jordanutz@outlook.com">jordanutz@outlook.com</a>
     </section>
   </>
