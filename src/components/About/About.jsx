@@ -45,12 +45,14 @@ const About = ({ about }) => {
                   <li className="about__hobby">Roller Coasters</li>
                   <li className="about__hobby">Japanese Culture</li>
                   <li className="about__hobby">Arcades</li>
+                  <li className="about__hobby">Vaporwave</li>
                 </ul>
               </Col>
               <Col xs={12}>
                 <ul>
                   <li className="about__hobby">Creative Writing</li>
                   <li className="about__hobby">Traveling</li>
+                  <li className="about__hobby">Swimming</li>
                   <li className="about__hobby">Biking</li>
                 </ul>
               </Col>
