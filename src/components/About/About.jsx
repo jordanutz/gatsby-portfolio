@@ -38,19 +38,19 @@ const About = ({ about }) => {
               </a>
               , where I spend my day writing performant code in React and leveling up my JavaScript skills.
             </p>
-            <p>Here are just a few hobbies of mine outside of programming:</p>
+            <p>Here are just a few interests of mine outside of programming:</p>
             <Row>
               <Col xs={12}>
                 <ul>
-                  <li className="about__hobby">Photography</li>
-                  <li className="about__hobby">Music</li>
-                  <li className="about__hobby">Gaming</li>
+                  <li className="about__hobby">Roller Coasters</li>
+                  <li className="about__hobby">Japanese Culture</li>
+                  <li className="about__hobby">Arcades</li>
                 </ul>
               </Col>
               <Col xs={12}>
                 <ul>
-                  <li className="about__hobby">Arcading</li>
-                  <li className="about__hobby">Film</li>
+                  <li className="about__hobby">Creative Writing</li>
+                  <li className="about__hobby">Traveling</li>
                   <li className="about__hobby">Biking</li>
                 </ul>
               </Col>
