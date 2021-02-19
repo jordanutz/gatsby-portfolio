@@ -79,12 +79,12 @@ export const portfolioData = [
   {
     id: 8,
     name: 'Quiz Time: Video Game Ed.',
-    category: 'Front End',
+    category: 'Project Highlight',
     year: '2021',
     image: 'https://i.ibb.co/hWssRWD/Screen-Shot-2021-02-18-at-1-41-32-PM.jpg',
     description: 'Intuitive trivia game that tests players of their knowledge of video games with a set of randomized questions retrieved from the Open Trivia API, alerting the player if their selection is correct or incorrect through visual cues and tracking their progress with each question',
     walkthrough: null,
-    technologies: 'React, JavaScript, Sass, Open Trivia API',
+    technologies: 'React, JavaScript, Axios, Sass, Open Trivia API',
     github: 'https://github.com/jordanutz/quiz-time',
     codepen: 'https://codepen.io/jordanutz/pen/mdOPWpE', 
     portfolio: true
@@ -92,10 +92,10 @@ export const portfolioData = [
  {
     id: 9,
     name: 'Calculator',
-    category: 'Front End',
+    category: 'Project Highlight',
     year: '2021',
     image: ' https://i.ibb.co/3TcDqS7/Screen-Shot-2021-02-18-at-6-55-40-PM-2.jpg',
-    description: 'JavaScript driven calculator with a stylish interface. Typescript also leveraged for explicit static typing of data scoped to the user input that is captured and rendered to the display and the expressions that are evaluated when an operant is selected',
+    description: 'JavaScript driven calculator with a stylish interface. Typescript also leveraged for explicit static typing of data scoped to the user input that is captured and rendered to the display, and the expressions that are evaluated when an operant is selected',
     walkthrough: null,
     technologies: 'React, JavaScript, TypeScript, Sass',
     github: 'https://github.com/jordanutz/react-calculator',

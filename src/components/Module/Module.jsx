@@ -8,12 +8,12 @@ const Module = ({
   id,
   title,
   role,
+  category,
   name,
   description,
   github,
   codepen,
   technologies,
-  walkthrough,
   image,
 }) => {
   let displayTechnologies = technologies.split(",").map(technology => {
@@ -25,7 +25,7 @@ const Module = ({
       {id % 2 !== 0 ? (
         <Row>
           <Col md={10} className="module__details">
-            <h4>{role}</h4>
+            <h4>{category}</h4>
             <h3>{name}</h3>
             <Row>
               <Col xs={24} className="module__logline">
@@ -58,6 +58,7 @@ const Module = ({
             <img src={image} alt={title} />
           </Col>
           <Col md={10} className="module__details module__details--right ">
+            <h4>{category}</h4>
             <h3>{name}</h3>
             <Row>
               <Col className="module__logline module__logline--right">
