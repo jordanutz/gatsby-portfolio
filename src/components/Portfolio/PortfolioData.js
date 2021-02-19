@@ -95,7 +95,7 @@ export const portfolioData = [
     category: 'Project Highlight',
     year: '2021',
     image: ' https://i.ibb.co/3TcDqS7/Screen-Shot-2021-02-18-at-6-55-40-PM-2.jpg',
-    description: 'JavaScript driven calculator with a stylish interface. Typescript also leveraged for explicit static typing of data scoped to the user input that is captured and rendered to the display, and the expressions that are evaluated when an operant is selected',
+    description: 'JavaScript powered calculator with a stylish interface. Typescript also leveraged for explicit static typing of data scoped to the user input that is captured and rendered to the display, and the expressions that are evaluated when an operant is selected',
     walkthrough: null,
     technologies: 'React, JavaScript, TypeScript, Sass',
     github: 'https://github.com/jordanutz/react-calculator',
