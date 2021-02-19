@@ -32,7 +32,6 @@ export default function Home() {
 
   let visibility = "hide"
 
-
   useScrollPosition(
     ({ prevPos, currPos }) => {
       if (currPos.y < 0 && currPos.y > -100) {

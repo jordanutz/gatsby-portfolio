@@ -43,10 +43,10 @@ const Portfolio = ({portfolio}) => {
                         <h2>Portfolio</h2>
                     </Col>
                 </Row>
-                <Row>
+                <Row data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
                     {displayPersonal}
                 </Row>
-                <Row data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
+                <Row ref={archive} data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
                     <Col xs={24} className="portfolio__archive">
                         <h4>Project Archive</h4>
                         <Row gutter={24} className='portfolio__archive-projects'>
@@ -55,8 +55,11 @@ const Portfolio = ({portfolio}) => {
                         <Button
                             type='link'
                             className='portfolio__link' 
-                            onClick={() => setToggle(!toggle)}>
-                            { toggle ? 'Return' : 'View More' }
+                            onClick={() => {
+                                setToggle(!toggle)
+                                archive.current.scrollIntoView({ block: "start", behavior: "smooth" });
+                            }}>
+                            { toggle ? 'Return' : 'View All' }
                         </Button>
                     </Col>
                 </Row>

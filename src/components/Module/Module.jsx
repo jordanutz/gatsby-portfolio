@@ -1,8 +1,8 @@
 import React from "react"
-import "./Module.less"
-
-// Components
 import { Layout, Row, Col } from "antd"
+import { ImGithub, ImCodepen } from 'react-icons/im';
+
+import "./Module.less"
 
 const Module = ({
   id,
@@ -11,6 +11,7 @@ const Module = ({
   name,
   description,
   github,
+  codepen,
   technologies,
   walkthrough,
   image,
@@ -39,10 +40,10 @@ const Module = ({
             <Row>
               <Col xs={24} className="module__nav">
                 <a href={github} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
+                  <ImGithub />
                 </a>
-                <a href={walkthrough} target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-external-link-alt"></i>
+                <a href={codepen} className='archive__link' target="_blank" rel="noopener noreferrer">
+                  <ImCodepen />
                 </a>
               </Col>
             </Row>
@@ -71,17 +72,11 @@ const Module = ({
             <Row>
               <Col xs={24} className="module__nav module__project-right">
                 <a href={github} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i>
+                  <ImGithub />
                 </a>
-                {name !== "Bikevana" && (
-                  <a
-                    href={walkthrough}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fas fa-external-link-alt"></i>
-                  </a>
-                )}
+                <a href={codepen} className='archive__link' target="_blank" rel="noopener noreferrer">
+                  <ImCodepen />
+                </a>
               </Col>
             </Row>
           </Col>

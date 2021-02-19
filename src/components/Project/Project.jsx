@@ -3,7 +3,7 @@ import "./Project.less"
 
 import { Row, Col } from "antd"
 import { DiAtom } from "react-icons/di"
-import { AiFillGithub } from "react-icons/ai"
+import { ImGithub, ImCodepen } from 'react-icons/im';
 import { FiExternalLink } from "react-icons/fi"
 
 const Project = ({ github, walkthrough, name, description, technologies }) => {
@@ -12,14 +12,14 @@ const Project = ({ github, walkthrough, name, description, technologies }) => {
   })
 
   return (
-    <section className="project"  data-sal="fade" data-sal-easing="ease-in-out" data-sal-duration="3000">
+    <section className="project">
       <Row>
         <Col span={12} className="project__nav">
           <DiAtom />
         </Col>
         <Col span={12} className="project__links">
           <a href={github} target="_blank" rel="noopener noreferrer">
-            <AiFillGithub />
+            <ImGithub />
           </a>
           {walkthrough && (
             <a href={walkthrough} target="_blank" rel="noopener noreferrer">

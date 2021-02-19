@@ -69,7 +69,7 @@ const Archive = ({archive}) => {
                 record.codepen &&
                 <a href={record.codepen} className='archive__link' target="_blank" rel="noopener noreferrer">
                   <ImCodepen />
-              </a>
+                </a>
               }
           </Space>
         ),
@@ -77,7 +77,7 @@ const Archive = ({archive}) => {
     ];
 
    return (
-      <Layout className='archive'>
+      <Layout className='archive' >
          <Row type='flex' justify='center'>
             <Col xs={24}>
                <Table 

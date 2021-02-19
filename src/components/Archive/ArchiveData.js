@@ -3,7 +3,7 @@ export const archiveData = [
       key: '1',
       year: '2021',
       project: 'Quiz Time: Video Game Edition',
-      goal: 'Build a trivia game that tests user of their knowledge of video games using the Open Trivia API',
+      goal: 'Trivia game that tests user of their knowledge of video games with questions retrieved from the Open Trivia API',
       technologies: [
          {tag: 'React', type: 'front'}, 
          {tag: 'JavaScript', type: 'front'}, 
@@ -13,7 +13,7 @@ export const archiveData = [
       codepen: 'https://codepen.io/jordanutz/pen/mdOPWpE'
    },
    {
-      key: '1',
+      key: '2',
       year: '2020',
       project: 'Portfolio',
       goal: 'Curate a collection of the projects I\'ve completed as a developer, both personal and professional',
@@ -26,7 +26,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '2',
+      key: '3',
       year: '2019',
       project: 'BudgetFM',
       goal: 'Users can track and manage their monthly income and expenses using a clean and intuitive user interface',
@@ -42,7 +42,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '3',
+      key: '4',
       year: '2019',
       project: 'WeatherFi',
       goal: 'Generate the 5-day forecast using the DarkSky API with Axios',
@@ -57,7 +57,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '4',
+      key: '5',
       year: '2019',
       project: 'Spookr',
       goal: 'Architect a fun reiminagining of Tinder where ghosts and homeowners can network to find their perfect haunting',
@@ -74,7 +74,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '5',
+      key: '6',
       year: '2019',
       project: 'Kalwaii',
       goal: 'Users can create customized meal plans and track its nutritional content to ensure they\'re meeting guidelines specific to their BMI',
@@ -91,7 +91,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '6',
+      key: '7',
       year: '2019',
       project: 'PokeFlex',
       goal: 'Users can strategize and build a competitive Pokemon team using comprehensive coverages for type and resistance as a guide',
@@ -107,7 +107,7 @@ export const archiveData = [
       codepen: null
    },
    {
-      key: '7',
+      key: '8',
       year: '2019',
       project: 'MyAmiibo',
       goal: 'Character selection can be made from data requested from Amiibo API and selection persists when page is reloaded',
@@ -122,7 +122,7 @@ export const archiveData = [
       codepen: null
    }, 
    {
-      key: '8',
+      key: '9',
       year: '2018',
       project: 'Bikevana',
       goal: 'Develop an eCommerce platform where users can search an inventory of bicycles and make a purchase that\'s processed using the Stripe API',
