@@ -42,7 +42,7 @@ const Module = ({
                 <a href={github} target="_blank" rel="noopener noreferrer">
                   <ImGithub />
                 </a>
-                <a href={codepen} className='archive__link' target="_blank" rel="noopener noreferrer">
+                <a href={codepen} target="_blank" rel="noopener noreferrer">
                   <ImCodepen />
                 </a>
               </Col>
@@ -75,7 +75,7 @@ const Module = ({
                 <a href={github} target="_blank" rel="noopener noreferrer">
                   <ImGithub />
                 </a>
-                <a href={codepen} className='archive__link' target="_blank" rel="noopener noreferrer">
+                <a href={codepen} target="_blank" rel="noopener noreferrer">
                   <ImCodepen />
                 </a>
               </Col>

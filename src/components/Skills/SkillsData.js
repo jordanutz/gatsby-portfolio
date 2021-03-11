@@ -17,7 +17,7 @@ export const frontEnd = {
             {id: 6, value: 'JavaScript', icon: <SiJavascript />}, 
             {id: 7, value: 'React', icon: <SiReact />}, 
             {id: 8, value: 'Redux', icon: <SiRedux />},
-            {id: 9, value: 'Typescript', icon: <SiTypescript />},
+            {id: 9, value: 'TypeScript', icon: <SiTypescript />},
             {id: 10, value: 'Webpack', icon: <SiWebpack />},
             {id: 11, value: 'Next.js', icon: <SiNextDotJs />},
             {id: 12, value: 'Gatsby', icon: <SiGatsby />},

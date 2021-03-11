@@ -21,11 +21,6 @@ const Project = ({ github, walkthrough, name, description, technologies }) => {
           <a href={github} target="_blank" rel="noopener noreferrer">
             <ImGithub />
           </a>
-          {walkthrough && (
-            <a href={walkthrough} target="_blank" rel="noopener noreferrer">
-              <FiExternalLink />
-            </a>
-          )}
         </Col>
       </Row>
       <Row className="project__header">
